@@ -1,6 +1,9 @@
 # Data Services
 Project Data Services exposes Database Tables and Views as a Rest service. 
 
+Technologies: 
+Servlet, Json, Derby, Maven
+
 The web application is built using a front controller design pattern. 
 ControlServlet acts as the Front Controller and serves all the requests that start with /rest/*
 ServiceBusinessFacade is the business class that validates the URL with the services configured in the xml. ALl the validations and security 
