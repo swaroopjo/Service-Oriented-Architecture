@@ -12,6 +12,7 @@ The Architecture is similar to Apache MiniLang that allows users to write servic
 
 Services Can be defined in an XML file ex: 
 Customer-Service.xml 
+
 <services>
 
 	<service name="getAllCustomers" table="CUSTOMERS">
@@ -29,17 +30,29 @@ loads the data from the text file into them.
 
 Once the application is deployed, Navigate to http://localhost:8080/data-services/rest/customers
 This should return a json
+
 {
+
 "matches": [
+
 {
+
 "POSTALCODE": "12209",
+
 "COUNTRY": "Germany",
+
 "ADDRESS": "Obere Str. 57",
+
 "CITY": "Berlin",
+
 "CONTACTNAME": "Maria Anders",
+
 "CUSTOMERNAME": "Alfreds Futterkiste",
+
 "CUSTOMERID": "1"
+
 }]}
+
 
 
 
