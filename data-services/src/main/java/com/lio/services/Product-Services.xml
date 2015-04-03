@@ -1,0 +1,7 @@
+<services>
+	
+	<service name="getAllProducts" table="PRODUCTS">
+		<http url="/products" method="GET" return="json"/>
+	</service>
+	
+</services>
