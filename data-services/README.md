@@ -23,7 +23,11 @@ Customer-Service.xml
 	
 </services>
 
-Security can be added with a tag <auth role="ADMIN,..."/> Future Enhancement. 
+Security can be added with a tag (Future Enhancement.)
+
+<auth role="ADMIN,..."/>
+
+ 
 Currently the application performs a selet operation the database to fetch the records. These must be replaced with the view names. 
 Apache Derby is used as the database itself. When the application starts, THe DAO checks if the Tables exists otherwise, it creates the Tables and 
 loads the data from the text file into them. 
