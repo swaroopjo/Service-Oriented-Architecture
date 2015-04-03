@@ -65,6 +65,11 @@ public class ServiceDAO extends AbstractDAO{
 				}
 				 
 				result.put("matches", jsonArray);
+				
+				pStmt.close();
+				rs.close();
+				connection.close();
+				
 			} catch (SQLException e) {
 				logger.error("Error Preparing the Data");
 				e.printStackTrace();
