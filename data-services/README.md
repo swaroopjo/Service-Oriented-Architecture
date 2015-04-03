@@ -25,7 +25,7 @@ Customer-Service.xml
 
 Security can be added with a tag (Future Enhancement.)
 
-<auth role="ADMIN,..."/>
+	<auth role="ADMIN,..."/>
 
  
 Currently the application performs a selet operation the database to fetch the records. These must be replaced with the view names. 
