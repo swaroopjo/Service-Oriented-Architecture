@@ -13,10 +13,15 @@ The Architecture is similar to Apache MiniLang that allows users to write servic
 Services Can be defined in an XML file ex: 
 Customer-Service.xml 
 <services>
+
 	<service name="getAllCustomers" table="CUSTOMERS">
+	
 		<http url="/customers" method="GET" return="json"/>
+		
 	</service>
+	
 </services>
+
 Security can be added with a tag <auth role="ADMIN,..."/> Future Enhancement. 
 Currently the application performs a selet operation the database to fetch the records. These must be replaced with the view names. 
 Apache Derby is used as the database itself. When the application starts, THe DAO checks if the Tables exists otherwise, it creates the Tables and 
